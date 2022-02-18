@@ -47,7 +47,7 @@ nbGen = nbGen + 1;
 nbEval = nbEval + input.pop_size;
 [fitness_gen,bestSoFarFit];
 fitness_gen=[fitness_gen,bestSoFarFit];
-solution_gen=[solution_gen,bestSoFarSolution];
+solution_gen=[solution_gen,m];
 % Start the loop
 while (nbEval<T) 
 % Reproduction (selection, crossver)
@@ -91,7 +91,7 @@ nbGen = nbGen + 1;
 nbEval = nbEval + input.pop_size;
 
 fitness_gen=[fitness_gen,bestSoFarFit];
-solution_gen=[solution_gen,bestSoFarSolution];
+solution_gen=[solution_gen,m];
 
 end
 bestSoFarFit
